@@ -1,5 +1,5 @@
 // import { NavLink } from 'gatsby';
-import { Link } from 'gatsby'
+import Link from "gatsby-link"
 
 import styled from 'styled-components';
 import { MainFont2, Blue} from './MainStyles';

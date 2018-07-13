@@ -6,30 +6,54 @@ const Navigation = () => {
   return (
     <Header>
       <Nav>
-        <StyledLinkLeft 
+        <StyledLinkLeft
+            activeStyle={{
+                borderBottom: '8px solid #eb1c24',
+                borderTop: '0px solid #eb1c24'
+            }}
             to="/brands" 
           >Brands
         </StyledLinkLeft>
         <StyledLinkLeft 
-            to="/adjustable" 
+            to="/adjustable"
+            activeStyle={{
+              borderBottom: '8px solid #eb1c24',
+              borderTop: '0px solid #eb1c24'
+          }} 
           >Adjustable
         </StyledLinkLeft>
         <StyledLinkLeft 
-            to="/accessories" 
+            to="/accessories"
+            activeStyle={{
+              borderBottom: '8px solid #eb1c24',
+              borderTop: '0px solid #eb1c24'
+          }} 
           >Accessories
         </StyledLinkLeft>
       </Nav>
       <Nav>
         <StyledLinkRight 
-            to="/financing" 
+            to="/financing"
+            activeStyle={{
+              borderBottom: '8px solid #eb1c24',
+              borderTop: '0px solid #eb1c24'
+          }} 
               >Financing
         </StyledLinkRight>
         <StyledLinkRight 
-            to="/blog" 
+            to="/blog"
+            activeStyle={{
+              borderBottom: '8px solid #eb1c24',
+              borderTop: '0px solid #eb1c24'
+          }} 
               >Our Blog
         </StyledLinkRight>
         <StyledLinkRight 
-            to="/about" 
+            to="/about"
+            activeStyle={{
+              borderBottom: '8px solid #eb1c24',
+              borderTop: '0px solid #eb1c24'
+          }} 
           >About Us
         </StyledLinkRight>
       </Nav>
