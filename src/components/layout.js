@@ -6,6 +6,7 @@ import styled from "styled-components"
 import Logo from './logo';
 import Navigation from './nav';
 import './layout.css'
+import Footer from './footer';
 
 const Container = styled.div`
   margin-left: auto;
@@ -43,6 +44,7 @@ const Layout = ({ children, data }) => (
         <Logo />
         <Container>
           {children}
+          <Footer />
         </Container>
       </>
     )}
