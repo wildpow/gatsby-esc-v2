@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Logo from './logo';
+import Navigation from './nav';
 import './layout.css'
 
 const Container = styled.div`
@@ -38,7 +39,7 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        
+        <Navigation />
         <Logo />
         <Container>
           {children}
