@@ -10,7 +10,7 @@ const SocialIcons = () => {
   return (
     <Social>
           <a href="https://www.facebook.com/ESCMattressCenter/" target="_blank" rel="noopener noreferrer">
-            <FBimage src={fbIcon} alt="Face Book logo" class="fb__img"/>
+            <FBimage src={fbIcon} alt="Face Book logo" />
           </a>
           <a href="https://twitter.com/CenterEsc?ref_src=twsrc%5Etfw" data-size="large" target="_blank" rel="noopener noreferrer">
             <Timage src={twitterIcon} alt="twitter logo"/>

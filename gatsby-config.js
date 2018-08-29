@@ -2,5 +2,18 @@ module.exports = {
   siteMetadata: {
     title: 'E.S.C Mattress Center',
   },
-  plugins: ['gatsby-plugin-react-helmet', `gatsby-plugin-styled-components`],
+  plugins: [
+    {
+      resolve: `gatsby-source-graphcms`,
+      options: {
+        endpoint: `https://api-uswest.graphcms.com/v1/cjjcfrumo0za401dhel34jekw/master`,
+        query: `{
+          toppers {
+            id
+            currentpromo
+          }
+        }`
+      }
+    },
+    'gatsby-plugin-react-helmet', `gatsby-plugin-styled-components`, `gatsby-plugin-netlify`],
 }
