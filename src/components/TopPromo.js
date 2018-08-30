@@ -1,15 +1,26 @@
 import React from 'react';
-/* global graphql */
+import { StaticQuery, graphql } from "gatsby"
 import { BigPromo, PromoLink } from '../Styles/TopperStyles';
-// Promo, BR,
 
 const TopPromo = ({ data }) => {
   return (
-    <PromoLink to="/current-sale">
-      <BigPromo>
-       hello
-      </BigPromo>
-    </PromoLink>
+    <StaticQuery
+      query={graphql`
+        query toppers {
+          topper {
+            id
+            currentpromo
+        }
+      }
+    `}
+    render={data => (
+      <PromoLink to="/current-sale">
+        <BigPromo>
+          {data.topper.currentpromo}
+        </BigPromo>
+      </PromoLink>
+    )}
+  />
   )
 }
 
