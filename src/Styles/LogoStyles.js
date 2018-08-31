@@ -19,7 +19,7 @@ export const StyledLink = styled(Link)`
   &:hover { transform: scale3d(1.05,1.05,1); }
 `;
 
-export const Image = styled.img`
+export const Image = styled.img` 
   color: white;
   transition: all .25s ease-in; 
   align-self: center;
