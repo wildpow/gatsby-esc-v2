@@ -8,6 +8,7 @@ import Navigation from './nav';
 // import './layout.css'
 import Footer from './footer';
 import Topper from './Topper';
+import MenuButton from './MenuButton';
 
 const Container = styled.div`
   margin-left: auto;
@@ -21,8 +22,27 @@ const Container = styled.div`
   @media (min-width: 1400px) { width: 1370px; }
 `;
 
-const Layout = ({ children, data }) => (
-  <StaticQuery
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: false
+    };
+    this.handleMouseDown = this.handleMouseDown.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this)
+  };
+  handleMouseDown(e) {
+    this.toggleMenu();
+    e.stopPropagation();
+  }
+  toggleMenu() {
+    this.setState({
+      visible: !this.state.visible
+    })
+  }
+  render() {
+    return (
+      <StaticQuery
     query={graphql`
       query SiteTitleQuery {
         site {
@@ -42,16 +62,21 @@ const Layout = ({ children, data }) => (
           ]}
         />
         <Topper />
+        <MenuButton handleMouseDown={this.handleMouseDown} />
         <Navigation />
         <Logo />
         <Container>
-          {children}
+          {this.props.children}
           <Footer />
         </Container>
       </>
     )}
   />
-)
+    )
+  }
+}
+  
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
