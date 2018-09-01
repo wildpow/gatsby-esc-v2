@@ -7,25 +7,25 @@ import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 import SealyLogo from '../images/SealyLogo.png';
 import StearnsLogo from '../images/StearnsLogo.png';
 import TempurLogo from '../images/TempurLogo2.png';
-
+import { Helmet } from "react-helmet";
 import Layout from '../components/layout'
-
+import MetaLogo from '../Images/MetaLogo.png';
 export default () => (
 <Layout>
   <Main MarginTop>
-    {/* <Helmet>
+    <Helmet>
       <title>ESC: Brands</title>
       <meta name="description" content="Come visit your locally owned, Everett based Sealy, Stearns and Foster & Tempur-Pedic dealer.  We have over 20 years of experience helping people sleep better on the brands we carry.  We carry 3 of the top 5 mattress brands in the US, so come see us, so we can help you sleep like the experts do!"/>
       <meta property="og:type"   content="website" />
       <meta property="og:site_name" content="E.S.C. Mattress Center"/>
       <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-      <meta property="og:image" content="https://www.escmattresscenter.com/static/media/logo.952ae51d.png"/> 
+      <meta property="og:image" content={MetaLogo}/> 
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="627"/>
       <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>
       <meta property="og:title" content="E.S.C. Mattress Center"/>
       <meta property="og:description" content="Come visit your locally owned, Everett based Sealy, Stearns and Foster & Tempur-Pedic dealer.  We have over 20 years of experience helping people sleep better on the brands we carry.  We carry 3 of the top 5 mattress brands in the US, so come see us, so we can help you sleep like the experts do!"/>
-    </Helmet> */}
+    </Helmet>
     <BreadWrapper hidenLarge>
       <BreadCrumbs here="Brands"/>
     </BreadWrapper>

@@ -8,26 +8,27 @@ import store1 from '../images/OutsideNightRatio.jpg';
 import store2 from '../images/OutsideDayRatio.jpg';
 import map from '../images/StoreMapRatio.png';
 import pop from '../images/funCo.png';
-
+import Helmet from 'react-helmet'
+import MetaLogo from '../Images/MetaLogo.png';
 import Layout from '../components/layout'
 
 
 export default () => (
 <Layout>
   <Main>
-    {/* <Helmet>
+    <Helmet>
       <title>ESC: About Us</title>
       <meta name="description" content="Three of the best trained mattress sales people in Western Washington decided to open their own store; so that they could help people the way they believe they should be helped!  We are bringing back the service you are used to!"/>
       <meta property="og:type"   content="website" />
       <meta property="og:site_name" content="E.S.C. Mattress Center"/>
       <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-      <meta property="og:image" content="https://www.escmattresscenter.com/static/media/logo.952ae51d.png"/> 
+      <meta property="og:image" content={MetaLogo}/> 
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="627"/>
       <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>
       <meta property="og:title" content="E.S.C. Mattress Center"/>
       <meta property="og:description" content="Three of the best trained mattress sales people in Western Washington decided to open their own store; so that they could help people the way they believe they should be helped!  We are bringing back the service you are used to!"/>
-    </Helmet> */}
+    </Helmet>
     <header>
         <H2> Our goal is to help Snohomish County sleep like the experts do and wake up feeling better.</H2>
     </header>
