@@ -9,6 +9,7 @@ import Navigation from './nav';
 import Footer from './footer';
 import Topper from './Topper';
 import MenuButton from './MenuButton';
+import Menu from './Menu';
 
 const Container = styled.div`
   margin-left: auto;
@@ -63,6 +64,7 @@ class Layout extends React.Component {
         />
         <Topper />
         <MenuButton handleMouseDown={this.handleMouseDown} />
+        <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
         <Navigation />
         <Logo />
         <Container>
