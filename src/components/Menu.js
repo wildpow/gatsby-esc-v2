@@ -19,7 +19,7 @@ const Menu = (props) => {
       <Topper/>
       <Nav>
         <LinkWrapper>
-          <StyledLink to="/" exact >Home</StyledLink>
+          <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/current-sale">Sale</StyledLink>
           <StyledLink to="/brands">Brands</StyledLink>
         </LinkWrapper>
