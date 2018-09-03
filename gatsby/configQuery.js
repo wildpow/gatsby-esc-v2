@@ -18,4 +18,33 @@ module.exports = `{
       textBlock
       id
     }
+    adjBaseses {
+      orderByPrice
+      fullName
+      brandName
+      baseDescription
+      keyFeatures
+      mainFeatures
+      warranty
+      id
+      uri
+      retailPrice
+      salePrice
+      coverImage {
+        handle
+        height
+        width
+      }
+      secondImage {
+        handle
+        height
+        width
+      }
+      thirdImage {
+        handle
+        height
+        width
+      }
+      
+    }
   }`
