@@ -1,50 +1,82 @@
 module.exports = `{
-  toppers {
+  allToppers {
     id
     currentpromo
   }
-  carousels {
+  allCarousels {
     id
-    url
+    image {
+      handle
+      width
+      height
+    }
     altTextForImage
-      image {
-        handle
-        width
-        height
-      }
+    url
+  }
+  allFronts {
+    id
+    title
+    textBlock
+  }
+  allAdjBaseses {
+    id
+    brandName
+    warranty
+    baseDescription
+    uri
+    value
+    height
+    features
+    fullName
+    keyfeatures
+    salePrice
+    price
+    coverImg {
+      height
+      handle
+      width
     }
-    fronts {
-      title
-      textBlock
-      id
+    detail1 {
+      height
+      handle
+      width
     }
-    adjBaseses {
-      orderByPrice
-      fullName
-      brandName
-      baseDescription
-      keyFeatures
-      mainFeatures
-      warranty
-      id
-      uri
-      retailPrice
-      salePrice
-      coverImage {
-        handle
-        height
-        width
-      }
-      secondImage {
-        handle
-        height
-        width
-      }
-      thirdImage {
-        handle
-        height
-        width
-      }
-      
+    detail2 {
+      height
+      handle
+      width
     }
+  }
   }`
+
+
+  
+  //   adjBaseses {
+  //     orderByPrice
+  //     fullName
+  //     brandName
+  //     baseDescription
+  //     keyFeatures
+  //     mainFeatures
+  //     warranty
+  //     id
+  //     uri
+  //     retailPrice
+  //     salePrice
+  //     coverImage {
+  //       handle
+  //       height
+  //       width
+  //     }
+  //     secondImage {
+  //       handle
+  //       height
+  //       width
+  //     }
+  //     thirdImage {
+  //       handle
+  //       height
+  //       width
+  //     }
+      
+  //   }

@@ -1,10 +1,10 @@
-import Markdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import {Animation, FadeIn, FlexCol, BoxShadow, Border, TextShadow,
   FlexRow, RedBorderBottom, MainFont2, MainFont1, Blue} from './MainStyles';
 
-export const AdjMarkdown = styled(Markdown)`
+export const AdjMarkdown = styled(ReactMarkdown)`
   font-family: ${MainFont1};
   padding: 30px;
   display: none;

@@ -30,10 +30,10 @@ const Adjustables = (props) => {
           <H3>{base.node.fullName}</H3>
           <InfoWrapper>
             <Img 
-              src={`https://media.graphcms.com/resize=w:400,h:400,fit:clip/${base.node.coverImage.handle}`} 
+              src={`https://media.graphcms.com/resize=w:400,h:400,fit:clip/${base.node.coverImg.handle}`} 
               alt={`${base.node.fullName} Ajustable base`}
             />
-            <AdjMarkdown source={base.node.keyFeatures} escapeHtml={false} />
+            <AdjMarkdown source={base.node.features} escapeHtml={false} />
           </InfoWrapper>
         </StyledLink>
       ))}
@@ -46,14 +46,14 @@ export default Adjustables
 
 export const allAdjustables = graphql`
   query allAdjustables {
-    allAdjBasese(sort: {fields: orderByPrice order: ASC}) {
+    allAdjBasese(sort: {fields: value order: ASC}) {
     edges {
       node {
         fullName
-        keyFeatures
+        features
         uri
         id
-        coverImage {
+        coverImg {
           handle
           height
           width

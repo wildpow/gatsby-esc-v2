@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: `gatsby-source-graphcms`,
       options: {
-        endpoint: `https://api-uswest.graphcms.com/v1/cjjcfrumo0za401dhel34jekw/master`,
+        endpoint: `https://api.graphcms.com/simple/v1/escMattressProPandaJoshbillwill`,
         query: require("./gatsby/configQuery")
       }
     },
