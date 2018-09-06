@@ -3,9 +3,8 @@ import Layout from '../../components/layout';
 import { graphql } from "gatsby"
 import Helmet from 'react-helmet';
 import {  MainWrapper,
-  Wrapper,
-  LinkWrapper,
-  MainTitle, Img  
+  Wrapper, LinkWrapper, MainTitle, Img, 
+  StyledLink, MattImg, Name, PriceRange, Divy 
 } from '../../Styles/MattListStyles';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 import TempurImg from '../../images/TempurLogo2.png'
@@ -36,8 +35,32 @@ const Tempurpedic = (props) => {
         <Img src={TempurImg} alt="Logo of the Tempurpedic mattress company"/>
       </MainTitle>
       <Wrapper>
-        {console.log(edges)}
+        {edges.map((mattress) => {
+          return (
+          <LinkWrapper key={mattress.node.id} >
+            <StyledLink to={`/brands/${title}/${mattress.node.uri}`}>
+              <Divy>
+                <MattImg 
+                  src={`https://media.graphcms.com/resize=w:250,h:250,fit:clip/${mattress.node.coverImg.handle}`} 
+                  alt={`Image of a ${mattress.node.brandName} ${mattress.node.subBrand} ${mattress.node.subName} mattress`}
+                />
+                <PriceRange>${mattress.node.priceRange[0]} - ${mattress.node.priceRange[1]}</PriceRange>
+              </Divy>
+              <Name>
+                {mattress.node.brandName}
+                    <br/>
+                {mattress.node.subBrand}
+                    <br/>
+                {mattress.node.subName}
+              </Name>
+            </StyledLink>
+          </LinkWrapper>
+          )
+        })}
       </Wrapper>
+      <BreadWrapper Brands Bottom>
+        <BreadCrumbs next="Brands" here="Tempurpedic"/>
+      </BreadWrapper>
     </MainWrapper>
     </Layout>
   )

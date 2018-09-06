@@ -59,7 +59,7 @@ const BreadCrumbs = (props) => {
       <Span>></Span>
       {props.next&&
       <div>
-        <Crumbs to={`/${props.next}`}>{props.next}</Crumbs>
+        <Crumbs to={`/${props.next.toLowerCase()}`}>{props.next}</Crumbs>
         {!props.only2Links ? <Span>></Span> : ''}
       </div>
       }
