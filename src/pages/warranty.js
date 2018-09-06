@@ -4,8 +4,11 @@ import { MainArticle,
         P, WarranyName, WarranyNumber,
         WarrantyWrapper, WarrantyTopper } from '../Styles/PolicyStyles';
 import { H2 } from '../Styles/MainStyles';
+import Layout from '../components/layout';
 import MetaLogoWarranty from '../images/MetaLogoWarranty.png';
+
 export default () => (
+  <Layout>
     <MainArticle>
       <Helmet>
         <title>ESC: Mattress Warranty Information</title>
@@ -53,6 +56,7 @@ export default () => (
         <WarranyNumber href="tel:1-800-821-6621">1-800-821-6621</WarranyNumber>
       </WarrantyWrapper>
     </MainArticle>
+  </Layout>
   )
 
 

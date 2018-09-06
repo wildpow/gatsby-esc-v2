@@ -9,6 +9,7 @@ import TempurLogo from '../images/TempurLogo2.png';
 import { Helmet } from "react-helmet";
 import Layout from '../components/layout'
 import MetaLogo from '../images/MetaLogoBrands.png';
+
 export default () => (
 <Layout>
   <Main MarginTop>
