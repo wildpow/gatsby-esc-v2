@@ -2,7 +2,6 @@ import React from 'react';
 import {Main, TempurImg, StearnsImg, SealyImg,
         MainText, Footer, StyledLink, BrandWrapper,
         StearnsWrapper } from '../Styles/BrandsStyles';
-// import { Helmet } from "react-helmet";
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 import SealyLogo from '../images/SealyLogo.png';
 import StearnsLogo from '../images/StearnsLogo.png';
