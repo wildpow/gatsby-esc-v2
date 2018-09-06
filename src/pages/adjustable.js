@@ -46,7 +46,7 @@ export default Adjustables
 
 export const allAdjustables = graphql`
   query allAdjustables {
-    allAdjBasese(sort: {fields: value order: ASC}) {
+    allAdjBasese(sort: {fields: value order: ASC} filter: {isPublished: {eq: true}}) {
     edges {
       node {
         fullName

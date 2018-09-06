@@ -19,6 +19,7 @@ module.exports = `{
     textBlock
   }
   allAdjBaseses {
+    isPublished
     id
     brandName
     warranty
@@ -47,6 +48,22 @@ module.exports = `{
       width
     }
   }
+  allMattresses {
+    id
+    isPublished
+    orderByPrice
+    brandName
+    uri
+    subName
+    subBrand
+    priceRange
+    coverImg {
+      handle
+      width
+      height
+    }	
+  }
+  
   }`
 
 
@@ -80,3 +97,22 @@ module.exports = `{
   //     }
       
   //   }
+
+
+  //// ALL MATT
+
+  // allMattresses {
+  // 	brandName
+  // 	uri
+  //   id
+  //   orderByPrice
+  //   isPublished
+  // 	subName
+  // 	subBrand
+  // 	priceRange
+  // 	coverImg {
+  //   	height
+  //   	handle
+  //   	width
+  // 	}
+  // }
