@@ -3,7 +3,7 @@ import { MainArticle, P, Heading } from '../Styles/PolicyStyles';
 import Helmet from 'react-helmet';
 import { H2 } from '../Styles/MainStyles';
 import Layout from '../components/layout';
-import MetaLogoPolicies from '../Images/MetaLogoPolicies.png';
+import MetaLogoPolicies from '../images/MetaLogoPolicies.png';
 
 export default () => (
   <Layout>

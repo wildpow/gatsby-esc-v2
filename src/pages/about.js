@@ -9,7 +9,7 @@ import store2 from '../images/OutsideDayRatio.jpg';
 import map from '../images/StoreMapRatio.png';
 import pop from '../images/funCo.png';
 import Helmet from 'react-helmet'
-import MetaLogo from '../Images/MetaLogo.png';
+import MetaLogo from '../images/MetaLogoAbout.png';
 import Layout from '../components/layout'
 
 

@@ -5,7 +5,7 @@ import Synchrony from '../images/Synchrony_Card_Image.jpg';
 import Acima from '../images/Acima_Logo.png';
 import Layout from '../components/layout';
 import Helmet from 'react-helmet'
-import MetaLogo from '../Images/MetaLogo.png';
+import MetaLogo from '../images/MetaLogoFinancing.png';
 
 export default () => (
 <Layout>

@@ -7,7 +7,7 @@ import Front from '../components/front';
 import { Carousel } from 'react-responsive-carousel'; 
 import { graphql } from "gatsby";
 import Helmet from 'react-helmet';
-import MetaLogo from '../Images/MetaLogo.png';
+import MetaLogo from '../images/MetaLogoIndex.png';
 
 injectGlobal`
   ${styledNormalize}

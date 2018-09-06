@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
 import { Main, StyledLink, H3, InfoWrapper, Img, AdjMarkdown} from '../Styles/AdjustableStyles';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
-import AdjLogo from '../Images/AdjLogo.png';
+import AdjLogo from '../images/AdjLogo.png';
 import Layout from '../components/layout'
 const Adjustables = (props) => {
   return (

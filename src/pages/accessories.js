@@ -5,7 +5,7 @@ import Pillows from '../images/PillowCollage.jpg';
 import Protector from '../images/Protector.jpg';
 import Sheets from '../images/SheetStack.jpg';
 import Layout from '../components/layout';
-import MetaLogo from '../Images/MetaLogo.png';
+import MetaLogo from '../images/MetaLogoAcc.png';
 import Helmet from 'react-helmet'
 
 export default () => (

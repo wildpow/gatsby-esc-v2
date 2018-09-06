@@ -4,7 +4,7 @@ import { MainArticle,
         P, WarranyName, WarranyNumber,
         WarrantyWrapper, WarrantyTopper } from '../Styles/PolicyStyles';
 import { H2 } from '../Styles/MainStyles';
-import MetaLogoWarranty from '../Images/MetaLogoWarranty.png';
+import MetaLogoWarranty from '../images/MetaLogoWarranty.png';
 export default () => (
     <MainArticle>
       <Helmet>

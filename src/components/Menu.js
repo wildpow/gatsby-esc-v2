@@ -3,7 +3,7 @@ import { StyledLink, BottomLinks, Nav,
   Wrapper, Image, Footer, BGcolorWrapper,
   NoLinkOnSM, LinkWrapper, LastLinkWrapper }  from '../Styles/MenuStyles';
 import Topper from './Topper';
-import image from '../Images/MenuLogo.png';
+import image from '../images/MenuLogo.png';
 import SocialIconsMobile from './SocialIconsMobileMenu';
 
 const Menu = (props) => {
