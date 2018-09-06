@@ -58,8 +58,10 @@ const Stearns = (props) => {
                 </LinkWrapper>
               )
             })}
-            {console.log(edges)}
           </Wrapper>
+          <BreadWrapper Brands Bottom>
+            <BreadCrumbs next="Brands" here="stearns"/>
+          </BreadWrapper>
         </MainWrapper>
     </Layout>
   )
@@ -69,7 +71,7 @@ export default Stearns
 
 export const stearnsMattresses = graphql`
   query stearnsMattresses {
-    allMattress(filter: {brandName: {in: "Stearns & Foster®"} isPublished: {eq: true}}){
+    allMattress(sort: {fields: orderByPrice order: ASC} filter: {brandName: {in: "Stearns & Foster®"} isPublished: {eq: true}}) {
       edges {
         node {
           brandName

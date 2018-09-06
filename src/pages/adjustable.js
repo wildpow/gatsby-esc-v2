@@ -38,6 +38,9 @@ const Adjustables = (props) => {
           </InfoWrapper>
         </StyledLink>
       ))}
+      <BreadWrapper hidenLarge Bottom>
+        <BreadCrumbs here="Adjustable"/>
+      </BreadWrapper>
     </Main>
   </Layout>
   )
