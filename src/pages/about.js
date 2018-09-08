@@ -2,8 +2,8 @@ import React from "react";
 // import Link from "gatsby-link";
 import { Main, PicHolder, StoreImg, MapImg,
           Address, Span, RegularParagraph, BlueWrapper,
-          SecondP, PopImg, PopNameHolder, Bill, Josh, Will  } from '../styles/aboutStyles';
-import { FlexCol, H2 } from '../styles/mainStyles';
+          SecondP, PopImg, PopNameHolder, Bill, Josh, Will  } from '../styles/aboutStyles.js';
+import { FlexCol, H2 } from '../styles/mainStyles.js';
 import store1 from '../images/outsideNightRatio.jpg';
 import store2 from '../images/outsideDayRatio.jpg';
 import map from '../images/storeMapRatio.png';

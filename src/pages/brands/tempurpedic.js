@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import {  MainWrapper,
   Wrapper, LinkWrapper, MainTitle, Img, 
   StyledLink, MattImg, Name, PriceRange, Divy 
-} from '../../styles/mattListStyles';
+} from '../../styles/mattListStyles.js';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 import TempurImg from '../../images/tempurLogo2.png'
 import logo from '../../images/logo.png';

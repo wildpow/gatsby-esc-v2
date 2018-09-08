@@ -1,6 +1,6 @@
 import React from 'react';
 import { CompanyWrapper, H3, P, InfoWrapper, Footer, CompanyWrapper2,
-  Img, BottomP, ApplyNow, Main } from '../styles/financingStyles';
+  Img, BottomP, ApplyNow, Main } from '../styles/financingStyles.js';
 import Synchrony from '../images/synchrony_Card_Image.jpg';
 import Acima from '../images/acima_Logo.png';
 import Layout from '../components/layout';

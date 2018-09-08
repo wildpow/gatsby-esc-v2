@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 import Helmet from 'react-helmet';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 import {  MainWrapper, Wrapper, LinkWrapper,
-  MainTitle, SealyImgPlace, StyledLink, MattImg, Name, PriceRange, Divy } from '../../styles/mattListStyles';
+  MainTitle, SealyImgPlace, StyledLink, MattImg, Name, PriceRange, Divy } from '../../styles/mattListStyles.js';
 import SealyImg from '../../images/sealyLogo.png';
 import logo from '../../images/logo.png';
 

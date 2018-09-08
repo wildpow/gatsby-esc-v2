@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { MainArticle,
         P, WarranyName, WarranyNumber,
-        WarrantyWrapper, WarrantyTopper } from '../styles/policyStyles';
-import { H2 } from '../styles/mainStyles';
+        WarrantyWrapper, WarrantyTopper } from '../styles/policyStyles.js';
+import { H2 } from '../styles/mainStyles.js';
 import Layout from '../components/layout';
 import logo from '../images/logo.png';
 

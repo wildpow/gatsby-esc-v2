@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
-import { Main, StyledLink, H3, InfoWrapper, Img, AdjMarkdown} from '../styles/adjustableStyles';
+import { Main, StyledLink, H3, InfoWrapper, Img, AdjMarkdown} from '../styles/adjustableStyles.js';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 import logo from '../images/logo.png';
 import Layout from '../components/layout';

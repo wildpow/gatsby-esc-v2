@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, H3, InfoWrapper, InfoWrapperReversed, AccWrapper, AccWrapper2, Img, P, Img2} from '../styles/accessoryStyles';
+import { Main, H3, InfoWrapper, InfoWrapperReversed, AccWrapper, AccWrapper2, Img, P, Img2} from '../styles/accessoryStyles.js';
 import Frame from '../images/frame.jpg';
 import Pillows from '../images/pillowCollage.jpg';
 import Protector from '../images/protector.jpg';

@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import {  MainWrapper, Wrapper, LinkWrapper,
   MainTitle, StearnsImgPlaceHolder, StyledLink, MattImg, Name, PriceRange, Divy
-} from '../../styles/mattListStyles';
+} from '../../styles/mattListStyles.js';
 import Layout from '../../components/layout'
 import logo from '../../images/logo.png';
 import StearnsImg from '../../images/stearnsLogo.png'

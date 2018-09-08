@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainArticle, P, Heading } from '../styles/policyStyles';
+import { MainArticle, P, Heading } from '../styles/policyStyles.js';
 import Helmet from 'react-helmet';
 import { H2 } from '../styles/mainStyles';
 import Layout from '../components/layout';
