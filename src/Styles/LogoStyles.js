@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import {Red, Blue, FlexCol, MainFont1,
-  TextShadow} from './mainStyles';
+  TextShadow} from './mainStyles.js';
 
 export const Wrapper = FlexCol.extend`
   margin-top: -15px;

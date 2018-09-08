@@ -2,7 +2,7 @@ import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import {Animation, FadeIn, FlexCol, BoxShadow, Border, TextShadow,
-  FlexRow, RedBorderBottom, MainFont2, MainFont1, Blue} from './mainStyles';
+  FlexRow, RedBorderBottom, MainFont2, MainFont1, Blue} from './mainStyles.js';
 
 export const AdjMarkdown = styled(ReactMarkdown)`
   font-family: ${MainFont1};

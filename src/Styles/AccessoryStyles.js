@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BoxShadow, Border, FlexRow, MainFont2, Blue, TextShadow, MainFont1, FlexCol, FadeIn, Animation } from './mainStyles';
+import { BoxShadow, Border, FlexRow, MainFont2, Blue, TextShadow, MainFont1, FlexCol, FadeIn, Animation } from './mainStyles.js';
 
 export const Main = FlexCol.extend`
   animation-name: ${FadeIn};

@@ -2,7 +2,7 @@
 import Link from "gatsby-link"
 
 import styled from 'styled-components';
-import { MainFont2, Blue} from './mainStyles';
+import { MainFont2, Blue} from './mainStyles.js';
 
 export const Header = styled.header`
   display: flex;

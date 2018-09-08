@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import { FadeIn, Animation, MainFont1, TextShadow, Border,
-          BoxShadow, FlexCol, MainFont2, Blue, Red } from './mainStyles';
+          BoxShadow, FlexCol, MainFont2, Blue, Red } from './mainStyles.js';
 
 export const Main = styled.div`
   animation-name: ${FadeIn};
