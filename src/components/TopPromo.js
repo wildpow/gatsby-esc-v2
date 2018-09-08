@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from "gatsby"
-import { BigPromo, PromoLink } from '../Styles/TopperStyles';
+import { BigPromo, PromoLink } from '../styles/topperStyles';
 
 const TopPromo = ({ data }) => {
   return (

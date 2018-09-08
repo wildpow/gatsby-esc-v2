@@ -2,10 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { MainArticle,
         P, WarranyName, WarranyNumber,
-        WarrantyWrapper, WarrantyTopper } from '../Styles/PolicyStyles';
-import { H2 } from '../Styles/MainStyles';
+        WarrantyWrapper, WarrantyTopper } from '../styles/policyStyles';
+import { H2 } from '../styles/mainStyles';
 import Layout from '../components/layout';
-import MetaLogoWarranty from '../images/MetaLogoWarranty.png';
+import logo from '../images/logo.png';
 
 export default () => (
   <Layout>
@@ -16,7 +16,7 @@ export default () => (
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image:secure_url" content={MetaLogoWarranty}/> 
+        <meta property="og:image:secure_url" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

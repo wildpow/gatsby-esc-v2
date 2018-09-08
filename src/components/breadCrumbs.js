@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'gatsby'
 import styled from 'styled-components';
-import { MainFont2, Blue, Red } from '../Styles/MainStyles';
+import { MainFont2, Blue, Red } from '../styles/mainStyles';
 
 export const BreadWrapper = styled.div`
   margin-top: ${props => props.Bottom ? '0px' : '12px'};

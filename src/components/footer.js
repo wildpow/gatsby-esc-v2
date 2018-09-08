@@ -3,7 +3,7 @@ import { MainFooter, Wrapper,
           Hours, HoursSpan, HoursPara,
           Contact, GraphImg, GraphLink, MapLink, Divy, BottomLinkWrapper,
           BottomLinks, BBBLink, BottomBBLink
-        } from '../Styles/FooterStyles';
+        } from '../styles/footerStyles';
 
 import GraphCMS from '../images/powered_by_graphcms.svg';
 import SocialIcons from './socialIcons';

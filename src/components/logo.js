@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../images/logo.png';
-import { Image, H1, Span, StyledLink, Wrapper } from '../Styles/LogoStyles';
+import { Image, H1, Span, StyledLink, Wrapper } from '../styles/logoStyles';
 
 const Logo = () => {
   return (

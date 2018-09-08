@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {FadeIn, Border, BoxShadow,
         MainFont1, MainFont2, Blue,
         TextShadow, FlexCol, Animation,
-        RedBorderBottom } from './MainStyles';
+        RedBorderBottom } from './mainStyles';
 
 export const MainArticle = styled.article`
   border: ${Border};

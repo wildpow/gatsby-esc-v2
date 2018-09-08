@@ -1,5 +1,5 @@
 import React from 'react';
-import { Social, YelpHolder, YelpImg, FBimage, Timage, InstaImg, MapsImg } from '../Styles/FooterStyles';
+import { Social, YelpHolder, YelpImg, FBimage, Timage, InstaImg, MapsImg } from '../styles/footerStyles';
 import fbIcon from '../images/FB.png';
 import twitterIcon from '../images/twitter.png';
 import Yelp from '../images/Yelp_burst_negative_RGB.png';

@@ -1,11 +1,11 @@
 import React from 'react';
 import { CompanyWrapper, H3, P, InfoWrapper, Footer, CompanyWrapper2,
-  Img, BottomP, ApplyNow, Main } from '../Styles/FinancingStyles';
+  Img, BottomP, ApplyNow, Main } from '../styles/financingStyles';
 import Synchrony from '../images/Synchrony_Card_Image.jpg';
 import Acima from '../images/Acima_Logo.png';
 import Layout from '../components/layout';
 import Helmet from 'react-helmet'
-import MetaLogo from '../images/MetaLogoFinancing.png';
+import logo from '../images/logo.png';
 
 export default () => (
 <Layout>
@@ -16,7 +16,7 @@ export default () => (
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image" content={MetaLogo}/> 
+        <meta property="og:image" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

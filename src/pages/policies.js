@@ -1,9 +1,9 @@
 import React from 'react';
-import { MainArticle, P, Heading } from '../Styles/PolicyStyles';
+import { MainArticle, P, Heading } from '../styles/policyStyles';
 import Helmet from 'react-helmet';
-import { H2 } from '../Styles/MainStyles';
+import { H2 } from '../styles/mainStyles';
 import Layout from '../components/layout';
-import MetaLogoPolicies from '../images/MetaLogoPolicies.png';
+import logo from '../images/logo.png';
 
 export default () => (
   <Layout>
@@ -14,7 +14,7 @@ export default () => (
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image:secure_url" content={MetaLogoPolicies}/> 
+        <meta property="og:image:secure_url" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

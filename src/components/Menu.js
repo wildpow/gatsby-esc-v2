@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyledLink, BottomLinks, Nav,
   Wrapper, Image, Footer, BGcolorWrapper,
-  NoLinkOnSM, LinkWrapper, LastLinkWrapper }  from '../Styles/MenuStyles';
+  NoLinkOnSM, LinkWrapper, LastLinkWrapper }  from '../styles/menuStyles';
 import Topper from './Topper';
-import image from '../images/MenuLogo.png';
-import SocialIconsMobile from './SocialIconsMobileMenu';
+import logo from '../images/logo.png';
+import SocialIcons from './socialIcons';
 
 const Menu = (props) => {
   var visibility = "hide";
@@ -41,9 +41,9 @@ const Menu = (props) => {
         </LastLinkWrapper>
       </Nav>
       <Footer>
-        <Image src={image} alt="Image of E S C Mattress Center sleeping panda bear"/>
+        <Image src={logo} alt="Image of E S C Mattress Center sleeping panda bear"/>
         <BGcolorWrapper>
-          <SocialIconsMobile/>
+          <SocialIcons/>
         </BGcolorWrapper>
       </Footer>
     </Wrapper>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Animation, FadeIn, FlexCol, FlexRow, MainFont1,
-  MainFont2, Blue, Red, TextShadow } from '../Styles/MainStyles'; 
+  MainFont2, Blue, Red, TextShadow } from './mainStyles'; 
 
 export const Main = FlexCol.extend`
   animation-name: ${FadeIn};

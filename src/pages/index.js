@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { Main, Linky } from '../Styles/HomeStyles';
+import { Main, Linky } from '../styles/homeStyles';
 import { injectGlobal } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 import Front from '../components/front';
 import { Carousel } from 'react-responsive-carousel'; 
 import { graphql } from "gatsby";
 import Helmet from 'react-helmet';
-import MetaLogo from '../images/MetaLogoIndex.png';
+import logo from '../images/logo.png';
 
 injectGlobal`
   ${styledNormalize}
@@ -31,7 +31,7 @@ const IndexPage = (props) => {
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image" content={MetaLogo}/> 
+        <meta property="og:image" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Nav, StyledLinkLeft, StyledLinkRight
-        } from '../Styles/navStyles';
+        } from '../styles/navStyles';
 
 const Navigation = () => {
   return (

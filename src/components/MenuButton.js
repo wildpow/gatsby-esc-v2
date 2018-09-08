@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, MenuLines, Bar } from '../Styles/MenuStyles';
+import {Button, MenuLines, Bar } from '../styles/menuStyles';
 
 const MenuButton = (props) => {
   return (

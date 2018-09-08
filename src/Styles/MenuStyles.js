@@ -2,7 +2,7 @@ import styled from 'styled-components'
 // import { NavLink } from 'gatsby';
 import { Link } from 'gatsby';
 
-import { Blue, Red, MainFont1, Border, BoxShadow } from './MainStyles';
+import { Blue, Red, MainFont1, Border, BoxShadow } from './mainStyles';
 
 export const Button = styled.button`
   float: right;

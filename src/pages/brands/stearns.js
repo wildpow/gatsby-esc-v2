@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import { graphql } from "gatsby"
 import {  MainWrapper, Wrapper, LinkWrapper,
   MainTitle, StearnsImgPlaceHolder, StyledLink, MattImg, Name, PriceRange, Divy
-} from '../../Styles/MattListStyles';
+} from '../../styles/mattListStyles';
 import Layout from '../../components/layout'
-import MetaLogoStearns from '../../Images/MetaLogoStearns.png';
+import logo from '../../images/logo.png';
 import StearnsImg from '../../Images/StearnsLogoMattList.png'
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 
@@ -21,7 +21,7 @@ const Stearns = (props) => {
           <meta property="og:type"   content="website" />
           <meta property="og:site_name" content="E.S.C. Mattress Center"/>
           <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-          <meta property="og:image" content={MetaLogoStearns}/> 
+          <meta property="og:image" content={logo}/> 
           <meta property="og:image:width" content="1200"/>
           <meta property="og:image:height" content="627"/>
           <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

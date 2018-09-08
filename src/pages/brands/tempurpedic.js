@@ -5,10 +5,11 @@ import Helmet from 'react-helmet';
 import {  MainWrapper,
   Wrapper, LinkWrapper, MainTitle, Img, 
   StyledLink, MattImg, Name, PriceRange, Divy 
-} from '../../Styles/MattListStyles';
+} from '../../styles/mattListStyles';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 import TempurImg from '../../images/TempurLogo2.png'
-import metaImage from '../../images/MetaLogoTempur.png'
+import logo from '../../images/logo.png';
+
 const Tempurpedic = (props) => {
   const { edges } = props.data.allMattress;
   const title = 'tempurpedic';
@@ -21,7 +22,7 @@ const Tempurpedic = (props) => {
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image" content={metaImage}/> 
+        <meta property="og:image" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

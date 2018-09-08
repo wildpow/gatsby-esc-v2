@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby'
-import { FlexCol, Animation, FadeIn, MainFont1, Blue, MainFont2 } from '../Styles/MainStyles';
+import { FlexCol, Animation, FadeIn, MainFont1, Blue, MainFont2 } from './mainStyles';
 
 export const Main = FlexCol.extend`
   /* margin-top: 15px; */

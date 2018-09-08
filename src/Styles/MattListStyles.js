@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { Animation, FadeIn, H2,
         FlexCol, BoxShadow, FlexRow, Border,
-        MainFont2 } from './MainStyles';
+        MainFont2 } from './mainStyles';
 
 export const MainWrapper = FlexCol.extend`
   /* box-shadow: ${BoxShadow};  */

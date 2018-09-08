@@ -1,11 +1,11 @@
 import React from 'react';
-import { Main, H3, InfoWrapper, InfoWrapperReversed, AccWrapper, AccWrapper2, Img, P, Img2} from '../Styles/AccessoryStyles';
+import { Main, H3, InfoWrapper, InfoWrapperReversed, AccWrapper, AccWrapper2, Img, P, Img2} from '../styles/accessoryStyles';
 import Frame from '../images/frame.jpg';
 import Pillows from '../images/PillowCollage.jpg';
 import Protector from '../images/Protector.jpg';
 import Sheets from '../images/SheetStack.jpg';
 import Layout from '../components/layout';
-import MetaLogo from '../images/MetaLogoAcc.png';
+import logo from '../images/logo.png';
 import Helmet from 'react-helmet'
 
 export default () => (
@@ -17,7 +17,7 @@ export default () => (
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image" content={MetaLogo}/> 
+        <meta property="og:image" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

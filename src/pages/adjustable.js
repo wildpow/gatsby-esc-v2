@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
-import { Main, StyledLink, H3, InfoWrapper, Img, AdjMarkdown} from '../Styles/AdjustableStyles';
+import { Main, StyledLink, H3, InfoWrapper, Img, AdjMarkdown} from '../styles/adjustableStyles';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
-import AdjLogo from '../images/AdjLogo.png';
+import logo from '../images/logo.png';
 import Layout from '../components/layout';
 
 const Adjustables = (props) => {
@@ -19,7 +19,7 @@ const Adjustables = (props) => {
         <meta property="og:type"   content="website" />
         <meta property="og:site_name" content="E.S.C. Mattress Center"/>
         <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-        <meta property="og:image" content={AdjLogo}/> 
+        <meta property="og:image" content={logo}/> 
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="627"/>
         <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

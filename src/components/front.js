@@ -1,5 +1,5 @@
 import React from 'react';
-import { Headline, Wrapper, P } from '../Styles/HomeStyles';
+import { Headline, Wrapper, P } from '../styles/homeStyles';
 import { StaticQuery, graphql } from "gatsby";
 
 const Front = () => {

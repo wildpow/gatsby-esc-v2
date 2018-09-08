@@ -1,14 +1,14 @@
 import React from 'react';
 import {Main, TempurImg, StearnsImg, SealyImg,
         MainText, Footer, StyledLink, BrandWrapper,
-        StearnsWrapper } from '../Styles/BrandsStyles';
+        StearnsWrapper } from '../styles/brandsStyles';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 import SealyLogo from '../images/SealyLogo.png';
 import StearnsLogo from '../images/StearnsLogo.png';
 import TempurLogo from '../images/TempurLogo2.png';
 import { Helmet } from "react-helmet";
 import Layout from '../components/layout'
-import MetaLogo from '../images/MetaLogoBrands.png';
+import logo from '../images/logo.png';
 
 export default () => (
 <Layout>
@@ -19,7 +19,7 @@ export default () => (
       <meta property="og:type"   content="website" />
       <meta property="og:site_name" content="E.S.C. Mattress Center"/>
       <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-      <meta property="og:image" content={MetaLogo}/> 
+      <meta property="og:image" content={logo}/> 
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="627"/>
       <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby'
 import { BoxShadow, Border, FlexRow, FlexCol, MainFont2,
-          Red, Blue} from './MainStyles';
+          Red, Blue} from './mainStyles';
 
 export const MainFooter = styled.footer`
   margin-top: 15px;

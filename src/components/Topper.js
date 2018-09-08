@@ -1,6 +1,6 @@
 import React from 'react';
 import TopPromo from './TopPromo';
-import { Top, Wrapper, Phone, PhoneWrapper, BR } from '../Styles/TopperStyles';
+import { Top, Wrapper, Phone, PhoneWrapper, BR } from '../styles/topperStyles';
 
 const Topper = () => {
   return (

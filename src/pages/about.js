@@ -2,14 +2,14 @@ import React from "react";
 // import Link from "gatsby-link";
 import { Main, PicHolder, StoreImg, MapImg,
           Address, Span, RegularParagraph, BlueWrapper,
-          SecondP, PopImg, PopNameHolder, Bill, Josh, Will  } from '../Styles/AboutStyles';
-import { FlexCol, H2 } from '../Styles/MainStyles';
+          SecondP, PopImg, PopNameHolder, Bill, Josh, Will  } from '../styles/aboutStyles';
+import { FlexCol, H2 } from '../styles/mainStyles';
 import store1 from '../images/OutsideNightRatio.jpg';
 import store2 from '../images/OutsideDayRatio.jpg';
 import map from '../images/StoreMapRatio.png';
 import pop from '../images/funCo.png';
 import Helmet from 'react-helmet'
-import MetaLogo from '../images/MetaLogoAbout.png';
+import logo from '../images/logo.png';
 import Layout from '../components/layout'
 
 
@@ -22,7 +22,7 @@ export default () => (
       <meta property="og:type"   content="website" />
       <meta property="og:site_name" content="E.S.C. Mattress Center"/>
       <meta property="og:url" content="https://www.escmattresscenter.com/"/>
-      <meta property="og:image" content={MetaLogo}/> 
+      <meta property="og:image" content={logo}/> 
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="627"/>
       <meta property="og:image:alt" content="E.S.C Mattress Center's logo of a panda"/>
