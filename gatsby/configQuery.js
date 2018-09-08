@@ -1,9 +1,11 @@
 module.exports = `{
-  allToppers {
+  allToppers(filter: {isPublished: true}) {
+    isPublished
     id
     currentpromo
   }
-  allCarousels {
+  allCarousels(filter: {isPublished: true}) {
+    isPublished
     id
     image {
       handle
@@ -13,12 +15,13 @@ module.exports = `{
     altTextForImage
     url
   }
-  allFronts {
+  allFronts(filter: {isPublished: true}) {
+    isPublished
     id
     title
     textBlock
   }
-  allAdjBaseses {
+  allAdjBaseses(filter: {isPublished: true}) {
     isPublished
     id
     brandName
@@ -48,9 +51,12 @@ module.exports = `{
       width
     }
   }
-  allMattresses {
+  allMattresses(filter: {isPublished: true}) {
     id
     isPublished
+    subLine {
+      subLineName
+    }
     orderByPrice
     brandName
     uri
@@ -64,8 +70,41 @@ module.exports = `{
     }	
   }
   
+  
   }`
+  // allSubLines {
+  //   id
+  // 	subLineName
+  //   mattresses {
+  //     orderByPrice
+  //     id
+  //     brandName
+  //     uri
+  //     subBrand
+  //     subName
+  //     priceRange
+  //     coverImg {
+  //       height
+  //       width
+  //       handle
+  //     }
+  //   }
+  // }
 
+
+  // SubLine(subLineName: "performance") {
+  //   mattresses(filter: {isPublished: true} orderBy: orderByPrice_ASC  ) {
+  //     brandName
+  //     id
+  //     uri
+  //     subBrand
+  //     subName
+  //     priceRange
+  //     coverImg {
+  //       handle
+  //     }
+  //   }
+  // }
 
   
   //   adjBaseses {
