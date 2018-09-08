@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import { graphql } from "gatsby"
 
 const Base = (props) => {
   return (
@@ -11,3 +12,11 @@ const Base = (props) => {
 }
 
 export default Base;
+
+export const query = graphql`
+  query SingleAjustableQuery($uri: String!) {
+    adjBasese(uri: { eq: $uri}) {
+      uri
+    }
+  }
+`
