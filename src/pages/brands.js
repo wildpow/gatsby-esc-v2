@@ -3,9 +3,9 @@ import {Main, TempurImg, StearnsImg, SealyImg,
         MainText, Footer, StyledLink, BrandWrapper,
         StearnsWrapper } from '../styles/brandsStyles';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
-import SealyLogo from '../images/SealyLogo.png';
-import StearnsLogo from '../images/StearnsLogo.png';
-import TempurLogo from '../images/TempurLogo2.png';
+import SealyLogo from '../images/sealyLogo.png';
+import StearnsLogo from '../images/stearnsLogo.png';
+import TempurLogo from '../images/tempurLogo2.png';
 import { Helmet } from "react-helmet";
 import Layout from '../components/layout'
 import logo from '../images/logo.png';

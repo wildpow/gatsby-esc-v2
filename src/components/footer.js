@@ -7,8 +7,8 @@ import { MainFooter, Wrapper,
 
 import GraphCMS from '../images/powered_by_graphcms.svg';
 import SocialIcons from './socialIcons';
-import BBB from '../images/Accredited_Business_Seal_in_Black.jpg';
-import BBBWebp from '../images/Accredited_Business_Seal_in_Black.webp'
+import BBB from '../images/accredited_Business_Seal_in_Black.jpg';
+import BBBWebp from '../images/accredited_Business_Seal_in_Black.webp'
 import BBBHor from '../images/ab_seal_horizontal_black_large.jpg';
 import BBBWebpHor from '../images/ab_seal_horizontal_black_large.webp'
 const Footer = () => {

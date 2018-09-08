@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 import {  MainWrapper, Wrapper, LinkWrapper,
   MainTitle, SealyImgPlace, StyledLink, MattImg, Name, PriceRange, Divy } from '../../styles/mattListStyles';
-import SealyImg from '../../images/SealyLogo.png';
+import SealyImg from '../../images/sealyLogo.png';
 import logo from '../../images/logo.png';
 
 const Sealy = (props) => {

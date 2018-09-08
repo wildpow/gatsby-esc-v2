@@ -7,7 +7,7 @@ import {  MainWrapper,
   StyledLink, MattImg, Name, PriceRange, Divy 
 } from '../../styles/mattListStyles';
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
-import TempurImg from '../../images/TempurLogo2.png'
+import TempurImg from '../../images/tempurLogo2.png'
 import logo from '../../images/logo.png';
 
 const Tempurpedic = (props) => {

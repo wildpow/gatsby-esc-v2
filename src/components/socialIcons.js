@@ -1,10 +1,10 @@
 import React from 'react';
 import { Social, YelpHolder, YelpImg, FBimage, Timage, InstaImg, MapsImg } from '../styles/footerStyles';
-import fbIcon from '../images/FB.png';
+import fbIcon from '../images/fB.png';
 import twitterIcon from '../images/twitter.png';
-import Yelp from '../images/Yelp_burst_negative_RGB.png';
+import Yelp from '../images/yelp_burst_negative_RGB.png';
 import Insta from '../images/glyph-logo_May2016.png';
-import Google from '../images/Google_Maps_App_3.png';
+import Google from '../images/google_Maps_App_3.png';
 
 const SocialIcons = () => {
   return (

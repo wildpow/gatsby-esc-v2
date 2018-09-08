@@ -4,9 +4,9 @@ import { Main, PicHolder, StoreImg, MapImg,
           Address, Span, RegularParagraph, BlueWrapper,
           SecondP, PopImg, PopNameHolder, Bill, Josh, Will  } from '../styles/aboutStyles';
 import { FlexCol, H2 } from '../styles/mainStyles';
-import store1 from '../images/OutsideNightRatio.jpg';
-import store2 from '../images/OutsideDayRatio.jpg';
-import map from '../images/StoreMapRatio.png';
+import store1 from '../images/outsideNightRatio.jpg';
+import store2 from '../images/outsideDayRatio.jpg';
+import map from '../images/storeMapRatio.png';
 import pop from '../images/funCo.png';
 import Helmet from 'react-helmet'
 import logo from '../images/logo.png';

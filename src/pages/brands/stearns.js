@@ -6,7 +6,7 @@ import {  MainWrapper, Wrapper, LinkWrapper,
 } from '../../styles/mattListStyles';
 import Layout from '../../components/layout'
 import logo from '../../images/logo.png';
-import StearnsImg from '../../Images/StearnsLogoMattList.png'
+import StearnsImg from '../../images/stearnsLogo.png'
 import BreadCrumbs, { BreadWrapper } from '../../components/breadCrumbs';
 
 

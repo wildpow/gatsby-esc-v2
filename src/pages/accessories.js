@@ -1,9 +1,9 @@
 import React from 'react';
 import { Main, H3, InfoWrapper, InfoWrapperReversed, AccWrapper, AccWrapper2, Img, P, Img2} from '../styles/accessoryStyles';
 import Frame from '../images/frame.jpg';
-import Pillows from '../images/PillowCollage.jpg';
-import Protector from '../images/Protector.jpg';
-import Sheets from '../images/SheetStack.jpg';
+import Pillows from '../images/pillowCollage.jpg';
+import Protector from '../images/protector.jpg';
+import Sheets from '../images/sheetStack.jpg';
 import Layout from '../components/layout';
 import logo from '../images/logo.png';
 import Helmet from 'react-helmet'
