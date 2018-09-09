@@ -26,6 +26,7 @@ module.exports = `{
     id
     brandName
     warranty
+    brandLine
     baseDescription
     uri
     value

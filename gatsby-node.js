@@ -11,9 +11,27 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         allAdjBasese {
           edges {
             node {
-              isPublished
               id
               uri
+              fullName
+              keyfeatures
+              features
+              price
+              salePrice
+              brandLine
+              brandName
+              baseDescription
+              height
+              warranty
+              coverImg {
+                handle
+              }
+              detail1 {
+                handle
+              } 
+              detail2 {
+                handle
+              }
             }
           }
         }
