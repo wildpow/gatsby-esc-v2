@@ -54,21 +54,42 @@ module.exports = `{
   }
   allMattresses(filter: {isPublished: true}) {
     id
+    uriBrandName
+    uri
+    brandName
+    subName
+    subBrand
+    name
+    discription
+    features
+    profile
+    contruction
+    mattOnly
+    mattOnlySale
+    setPrice
+    setPriceSale
+    warranty
     isPublished
     subLine {
       subLineName
     }
     orderByPrice
-    brandName
-    uri
-    subName
-    subBrand
     priceRange
     coverImg {
       handle
       width
       height
     }	
+    detail1 {
+      handle
+      width
+      height
+    }
+    detail2 {
+      handle
+      width
+      height
+    }
   }
   
   

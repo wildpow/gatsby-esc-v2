@@ -1,56 +1,64 @@
-const path = require('path')
-const slash = require('slash')
+const path = require('path');
+const slash = require('slash');
+const queryAll = require('./gatsby/queryAll');
 
+// exports.createPages = ({ graphql, boundActionCreators }) => {
+//   const { createPage } = boundActionCreators
+//   return new Promise((resolve, reject) => {
+
+//     const adjTemplate = path.resolve(`src/templates/base.js`)
+//     resolve(
+//       graphql(queryAll).then(result => {
+//         if (result.errors) {
+//           reject(result.errors);
+//         }
+//         const adjustable = result.data.allAdjBasese.edges;
+//         adjustable.map(({ node}) => {
+//           createPage({
+//             path: `/adjustable/${node.uri}`,
+//             component: slash(adjTemplate),
+//             context: {
+//               uri: node.uri
+//             }
+//           })
+//         })
+//     )
+
+//       }
+//     }
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
-    const adjTemplate = path.resolve(`src/templates/base.js`)
-
-    graphql(`
-      {
-        allAdjBasese {
-          edges {
-            node {
-              id
-              uri
-              fullName
-              keyfeatures
-              features
-              price
-              salePrice
-              brandLine
-              brandName
-              baseDescription
-              height
-              warranty
-              coverImg {
-                handle
-              }
-              detail1 {
-                handle
-              } 
-              detail2 {
-                handle
-              }
-            }
-          }
+    const adjTemplate = path.resolve(`src/templates/base.js`);
+    const mattressTemplate = path.resolve(`src/templates/mattress.js`);
+    resolve(
+      graphql(queryAll).then(result => {
+        if (result.errors) {
+          reject(result.errors);
         }
-      }
-    `
-    ).then(result => {
-      if (result.errors) {
-        console.log(result.errors)
-      }
-      result.data.allAdjBasese.edges.map(({ node}) => {
-        createPage({
-          path: `/adjustable/${node.uri}`,
-          component: slash(adjTemplate),
-          context: {
-            uri: node.uri
-          }
+        const adjustables = result.data.allAdjBasese.edges;
+        adjustables.map(({ node }) => {
+          createPage({
+            path: `/adjustable/${node.uri}`,
+            component: slash(adjTemplate),
+            context: {
+              uri: node.uri
+            }
+          })
         })
+        const mattresses = result.data.allMattress.edges;
+        mattresses.map(({ node }) => {
+          createPage({
+            path: `/brands/${node.uriBrandName}/${node.uri}`,
+            component: slash(mattressTemplate),
+            context: {
+              uri: node.uri
+            }
+          })
+        })
+        // console.log(result.data.allAdjBasese)
+        // console.log(result.data.allMattress)
       })
-      resolve()
-    })
+    )
   })
 }
