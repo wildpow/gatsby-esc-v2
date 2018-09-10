@@ -1,12 +1,12 @@
 import React from 'react';
-import { StaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import logo from '../images/logo.png';
 import { Main, SiteLinks, MainLinks, MattLinksWrapper, BrandLinks,
   UnList, Lilist, BottomLinks } from '../styles/siteMapStyles';
 import { H2 } from '../styles/mainStyles';
-
+import AdjSiteMapData from '../components/adjStieMapData'
 const SiteMap = (props) => {
   return (
   <React.Fragment>
@@ -106,32 +106,7 @@ const SiteMap = (props) => {
             <BrandLinks to="/adjustable">Adjustable Bases</BrandLinks>
           </h3>
           <ul>
-            <StaticQuery
-              query={graphql`
-                query allAdjSiteMap {
-                  allAdjBasese(sort: {fields: value order: ASC} filter: {isPublished: {eq: true}}) {
-                    edges {
-                      node {
-                        uri fullName id
-                      }
-                    }
-                  }
-                }`}
-                render={data => (
-                  <React.Fragment>
-                    {data.allAdjBasese.edges.map((base) => {
-                      return (
-                        <li key={base.node.id}>
-                          <SiteLinks to={`/adjustable/${base.node.uri}`}>
-                            {base.node.fullName}
-                          </SiteLinks>
-                        </li>
-                      )
-                    })}
-                    
-                  </React.Fragment>
-                )}
-                />
+            <AdjSiteMapData/>
           </ul>
         </Main>
       </BottomLinks>
