@@ -7,10 +7,15 @@ import image from '../images/ezgif.com-optimize.gif';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 
 const NotFoundPage = (props) => {
-  const uri = props.location.href.split('/')
+  let uri = []
+  if(typeof window !== "undefined") {
+    uri = window.location.href.split('/')
+  } else {
+    uri = ['']
+  }
   return (
-
   <Layout>
+    {/* {console.log(uri)} */}
     <BreadWrapper>
       <BreadCrumbs here={uri[uri.length-1]}/>
     </BreadWrapper>
