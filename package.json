@@ -8,6 +8,7 @@
     "gatsby-link": "next",
     "gatsby-plugin-netlify": "^2.0.0-rc.2",
     "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-plugin-styled-components": "next",
     "gatsby-source-graphcms": "^1.0.0-alpha.3",
     "react": "^16.5.0",

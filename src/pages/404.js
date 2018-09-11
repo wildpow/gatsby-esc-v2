@@ -1,11 +1,34 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { Main, Img } from '../styles/panda404Styles';
+import { H2 } from '../styles/mainStyles';
+import { Link } from 'gatsby'
+import image from '../images/ezgif.com-optimize.gif';
+import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 
-const NotFoundPage = () => (
+const NotFoundPage = (props) => {
+  const uri = props.location.href.split('/')
+  return (
+
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <BreadWrapper>
+      <BreadCrumbs here={uri[uri.length-1]}/>
+    </BreadWrapper>
+    <Main>
+      <header>
+        {/* {console.log(props.location.href)}
+        {console.log(uri[uri.length-1])} */}
+        <H2>Our panda couldn't find the product you're looking for...</H2>
+      </header>
+      
+      <Link to='/'><Img src={image} alt="E S C Mattress Center Sleeping Panda "/></Link>
+    </Main>
+    <BreadWrapper>
+      <BreadCrumbs here={uri[uri.length-1]}/>
+    </BreadWrapper>
   </Layout>
-)
+  )
+}
+
 
 export default NotFoundPage

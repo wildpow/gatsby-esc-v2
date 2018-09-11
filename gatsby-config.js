@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'E.S.C Mattress Center',
+    siteUrl: `https://www.escmattresscenter.com`,
   },
   plugins: [
     {
@@ -10,5 +11,5 @@ module.exports = {
         query: require("./gatsby/configQuery")
       }
     },
-    'gatsby-plugin-react-helmet', `gatsby-plugin-styled-components`, `gatsby-plugin-netlify`],
+    `gatsby-plugin-react-helmet`,`gatsby-plugin-sitemap`, `gatsby-plugin-styled-components`, `gatsby-plugin-netlify`],
 }
