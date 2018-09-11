@@ -1,44 +1,5 @@
 'use strict'
 
-// module.exports = `
-//   {
-//   allAdjBasese {
-//     edges {
-//       node {
-//         id
-//         uri
-//         fullName
-//         keyfeatures
-//         features
-//         price
-//         salePrice
-//         brandLine
-//         brandName
-//         baseDescription
-//         height
-//         warranty
-//         coverImg {
-//           handle
-//         }
-//         detail1 {
-//           handle
-//         } 
-//         detail2 {
-//           handle
-//         }
-//       }
-//     }
-//   }
-//   allMattresses {
-//     edges {
-//       node {
-//         uri
-//       }
-//     }
-//   }
-// }
-// `
-
 module.exports = `
   {
     allAdjBasese(filter: {isPublished: {eq: true}}) {

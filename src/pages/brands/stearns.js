@@ -43,7 +43,7 @@ const Stearns = (props) => {
                     <Divy>
                       <MattImg 
                         src={`https://media.graphcms.com/resize=w:250,h:250,fit:clip/${mattress.node.coverImg.handle}`} 
-                        alt={`Image of a ${mattress.node.brandName} ${mattress.node.subBrand} ${mattress.subName} mattress`}
+                        alt={`Image of a ${mattress.node.brandName} ${mattress.node.subBrand} ${mattress.node.subName} mattress`}
                       />
                       <PriceRange>${mattress.node.priceRange[0]} - ${mattress.node.priceRange[1]}</PriceRange>
                     </Divy>
