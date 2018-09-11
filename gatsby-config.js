@@ -11,5 +11,21 @@ module.exports = {
         query: require("./gatsby/configQuery")
       }
     },
-    `gatsby-plugin-react-helmet`,`gatsby-plugin-sitemap`, `gatsby-plugin-styled-components`, `gatsby-plugin-netlify`],
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+      name: `E.S.C Mattress Center`,
+      short_name: `E.S.C`,
+      start_url: `/`,
+      background_color: `#ffffff`,
+      theme_color: `#1565c0`,
+      display: `minimal-ui`,
+      icon: `src/images/logo.png`, // This path is relative to the root of the site.
+    },
+    },
+    `gatsby-plugin-offline`],
 }
