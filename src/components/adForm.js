@@ -81,14 +81,15 @@ class AdForm extends Component {
 
   handleSubmit = e => {
     // console.log('from submit',e)
+    e.preventDefault();
+    const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": form.getAttribute("name"), ...this.state })
     })
     .then(() => this.handleShow())
     .catch(error => alert(error));
-    e.preventDefault();
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
