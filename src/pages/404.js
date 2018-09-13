@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import image from '../images/ezgif.com-optimize.gif';
 import BreadCrumbs, { BreadWrapper } from '../components/breadCrumbs';
 
-const NotFoundPage = (props) => {
+const NotFoundPage = () => {
   let uri = []
   if(typeof window !== "undefined") {
     uri = window.location.href.split('/')

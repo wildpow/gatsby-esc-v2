@@ -25,7 +25,6 @@ const IndexPage = (props) => {
   const { edges } = props.data.allCarousel
   return (
   <Layout>
-    {console.log(edges)}
     <Helmet>
         <title>E.S.C. Mattress Center</title>
         <meta name="description" content="A licensed mattress retailer for Sealy, Stearns and Foster, and Tempur-Pedic offering almost fifty mattresses with prices to fit every budget.  ESC Mattress Center is a locally owned company in Everett WA with more than twenty years of mattress industry experience between our non-commissioned staff."/>
