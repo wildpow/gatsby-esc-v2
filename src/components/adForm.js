@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { FormWrapper, Form, Label,
           Button, Input, ModalBox,
           ModalContainer, ModalButton, LabelWrapper } from '../styles/landingStyles';
+          import { navigateTo } from "gatsby-link";
+
 //modal div
 let modalRoot
 let mainRoot
@@ -88,7 +90,7 @@ class AdForm extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": form.getAttribute("name"), ...this.state })
     })
-    .then(() => this.handleShow())
+    .then(() => navigateTo(form.getAttribute("action")))
     .catch(error => alert(error));
   }
 
@@ -111,7 +113,7 @@ class AdForm extends Component {
         <Form
           name="contact"
           method="post"
-          // action={this.handleShow}
+          action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
