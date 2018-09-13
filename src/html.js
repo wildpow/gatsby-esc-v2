@@ -21,8 +21,8 @@ export default class HTML extends React.Component {
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
-          {/* <div id="modal-root"></div>
-          <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
+          <div id="modal-root"></div>
+          {/* <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
             <input type="text" name="name" />
             <input type="email" name="email" />
             <input type="tel" name="tel" />
