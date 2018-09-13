@@ -80,6 +80,7 @@ class AdForm extends Component {
   }
 
   handleSubmit = e => {
+    // console.log('from submit',e)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -106,7 +107,21 @@ class AdForm extends Component {
     ) : null;
     return ( 
       <FormWrapper style={{opacity: this.state.opacity}}>
-        <Form onSubmit={this.handleSubmit}>
+        <Form
+          name="contact"
+          method="post"
+          // action={this.handleShow}
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
+        >
+        <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
           <LabelWrapper TopM>
             <Label>Name:</Label>
               <Input
@@ -123,6 +138,7 @@ class AdForm extends Component {
             />
           </LabelWrapper>
           <LabelWrapper>
+            {/* {console.log(this.state)} */}
             <Label>Email:</Label>
               <Input
                 required
