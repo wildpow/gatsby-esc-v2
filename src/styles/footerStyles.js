@@ -153,8 +153,8 @@ export const BottomLinkWrapper = FlexCol.extend`
 `;
 
 export const BottomLinks = styled(Link)`
-  color: ${Red};
-  &:hover { color: ${Blue}; }
+  color: ${Blue};
+  &:hover { color: ${Red}; }
 `;
 
 export const BBBLink = styled.a`
