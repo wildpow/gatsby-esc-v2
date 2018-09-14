@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,5 +26,5 @@ module.exports = {
       icon: `src/images/logo.png`, // This path is relative to the root of the site.
     },
     },
-    `gatsby-plugin-offline`],
+    `gatsby-plugin-offline`,`gatsby-plugin-netlify`],
 }
