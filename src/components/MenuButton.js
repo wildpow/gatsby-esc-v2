@@ -3,7 +3,7 @@ import {Button, MenuLines, Bar } from '../styles/menuStyles';
 
 const MenuButton = (props) => {
   return (
-    <Button type="button" role="button" onMouseUp={props.handleMouseDown}>
+    <Button type="button" role="presentation" aria-label="mobile navigation" onMouseUp={props.handleMouseDown}>
       <MenuLines>
         <Bar></Bar>
         <Bar></Bar>
