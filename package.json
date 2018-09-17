@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Aaron Wilder <element1028@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.0.0-rc.25",
-    "gatsby-link": "^2.0.0-rc.3",
+    "gatsby": "^2.0.0-rc.28",
+    "gatsby-link": "^2.0.0-rc.4",
     "gatsby-plugin-manifest": "^2.0.2-rc.1",
     "gatsby-plugin-netlify": "^2.0.0-rc.6",
-    "gatsby-plugin-offline": "^2.0.0-rc.8",
+    "gatsby-plugin-offline": "^2.0.0-rc.9",
     "gatsby-plugin-react-helmet": "^3.0.0-rc.1",
     "gatsby-plugin-sitemap": "^2.0.0-rc.2",
     "gatsby-plugin-styled-components": "^3.0.0-rc.5",
@@ -20,8 +20,8 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.5.0",
     "react-move": "^2.8.0",
-    "react-responsive-carousel": "^3.1.41",
-    "styled-components": "^3.3.6",
+    "react-responsive-carousel": "^3.1.42",
+    "styled-components": "^3.4.6",
     "styled-normalize": "^8.0.0"
   },
   "keywords": [

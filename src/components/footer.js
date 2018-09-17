@@ -35,7 +35,7 @@ const Footer = () => {
         <Hours>
           <HoursSpan>Address</HoursSpan>
           <HoursPara>
-          <MapLink href="https://goo.gl/maps/AivxRZEWVwm" target="_blank" rel="noopener noreferrer">
+          <MapLink href="https://goo.gl/maps/nqXkkkAGRdu" target="_blank" rel="noopener noreferrer">
             10121 Evergreen Way<br/> #30<br/>
             Everett, Washington 98204
             </MapLink>

@@ -43,7 +43,7 @@ export const Top = styled.div`
 `;
 Top.defaultProps = {
   theme: {
-    main: '#1565c0'
+    main: '#eb1c24'
   }
 }
 

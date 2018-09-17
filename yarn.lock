@@ -3925,9 +3925,9 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-gatsby-cli@^2.0.0-rc.5:
-  version "2.0.0-rc.5"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.0.0-rc.5.tgz#30d03b71d2fa710c772aa808b2e7b99c37a005d7"
+gatsby-cli@^2.0.0-rc.6:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.2.0.tgz#5144fa95919825764dd3ab8a2c2152f7e66625fb"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -3950,9 +3950,9 @@ gatsby-cli@^2.0.0-rc.5:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
-gatsby-link@^2.0.0-rc.3:
-  version "2.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-rc.3.tgz#e6b3f3c29f1ce7db884e3e820c28cec0e790d95c"
+gatsby-link@^2.0.0-rc.4:
+  version "2.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.0.0-rc.4.tgz#9db9da36db7e31efba09d5929a086a0a499989ac"
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@reach/router" "^1.1.1"
@@ -3978,9 +3978,9 @@ gatsby-plugin-netlify@^2.0.0-rc.6:
     lodash "^4.17.10"
     webpack-assets-manifest "^3.0.2"
 
-gatsby-plugin-offline@^2.0.0-rc.8:
-  version "2.0.0-rc.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.0-rc.8.tgz#9b356b97a1c2d81eac80709f93a2702efa759a71"
+gatsby-plugin-offline@^2.0.0-rc.9:
+  version "2.0.0-rc.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.0-rc.9.tgz#5ca059038031d0f4e4bafa7ff7afc6c3fb6de031"
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
@@ -4036,9 +4036,9 @@ gatsby-source-graphcms@^1.0.0-alpha.3:
     pluralize "^7.0.0"
     ramda "^0.25.0"
 
-gatsby@^2.0.0-rc.25:
-  version "2.0.0-rc.25"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.25.tgz#42d74b82fc859bb4d0a458613076d900089db1b9"
+gatsby@^2.0.0-rc.28:
+  version "2.0.0-rc.28"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.0-rc.28.tgz#83262d688ae40de0daecf6afb39a0a0438a33a9d"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4091,8 +4091,8 @@ gatsby@^2.0.0-rc.25:
     flat "^4.0.0"
     friendly-errors-webpack-plugin "^1.6.1"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.0.0-rc.5"
-    gatsby-link "^2.0.0-rc.3"
+    gatsby-cli "^2.0.0-rc.6"
+    gatsby-link "^2.0.0-rc.4"
     gatsby-plugin-page-creator "^2.0.0-rc.5"
     gatsby-react-router-scroll "^2.0.0-rc.2"
     glob "^7.1.1"
@@ -7110,9 +7110,9 @@ react-move@^2.8.0:
     d3-interpolate "^1.2.0"
     d3-timer "^1.0.4"
 
-react-responsive-carousel@^3.1.41:
-  version "3.1.41"
-  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.41.tgz#b100f192ae7b147bf87eb17942ac5738cfd146fb"
+react-responsive-carousel@^3.1.42:
+  version "3.1.42"
+  resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.1.42.tgz#2da57a6b77545bc233b913c0b015871da619e56c"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.5.8"
@@ -8121,7 +8121,7 @@ style-loader@^0.21.0:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^3.3.6:
+styled-components@^3.4.6:
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.4.6.tgz#134f1ab89ed732686bf7de3ff8fca557283cbd60"
   dependencies:

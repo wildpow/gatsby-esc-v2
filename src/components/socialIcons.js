@@ -15,7 +15,7 @@ const SocialIcons = () => {
           <a href="https://twitter.com/CenterEsc?ref_src=twsrc%5Etfw" data-size="large" target="_blank" rel="noopener noreferrer">
             <Timage src={twitterIcon} alt="twitter logo"/>
           </a>
-          <a href="https://www.instagram.com/escmattresscenter/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/centeresc/" target="_blank" rel="noopener noreferrer">
             <InstaImg src={Insta} alt="Instagram logo"/>
           </a>
           <a href="https://www.yelp.com/biz/esc-mattress-center-everett-3" target="_blank" rel="noopener noreferrer">
@@ -23,7 +23,7 @@ const SocialIcons = () => {
               <YelpImg src={Yelp} alt="yelp logo"/>
             </YelpHolder>
           </a>
-          <a href="https://goo.gl/maps/AivxRZEWVwm" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/maps/nqXkkkAGRdu" target="_blank" rel="noopener noreferrer">
             <MapsImg src={Google} alt="google maps logo"/>
           </a>
         </Social>
