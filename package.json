@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "^2.0.0-rc.28",
     "gatsby-link": "^2.0.0-rc.4",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "^2.0.2-rc.1",
     "gatsby-plugin-netlify": "^2.0.0-rc.6",
     "gatsby-plugin-offline": "^2.0.0-rc.9",

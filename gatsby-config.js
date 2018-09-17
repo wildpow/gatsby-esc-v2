@@ -25,6 +25,13 @@ module.exports = {
       display: `minimal-ui`,
       icon: `src/images/logo.png`, // This path is relative to the root of the site.
     },
+   
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-112381210-1`,
+      },
     },
     `gatsby-plugin-offline`,`gatsby-plugin-netlify`],
 }
