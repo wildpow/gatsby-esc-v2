@@ -44,13 +44,13 @@ export const Social = FlexRow.extend`
 
 export const FBimage = ImgHover.extend`
   max-width: 3rem;
-  @media(min-width: 360px) { max-width: 3.5rem; }
+  @media(min-width: 360px) { max-width: 3.4rem; }
 `;
 
 export const Timage = ImgHover.extend`
   max-width: 3.7rem;
   padding-left: 10px;
-  @media(min-width: 360px) { max-width: 3.5rem; }
+  @media(min-width: 360px) { max-width: 4.0rem; }
 `;
 
 export const InstaImg = ImgHover.extend`
