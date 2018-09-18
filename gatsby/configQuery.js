@@ -125,6 +125,8 @@ module.exports = `{
     content
     bottomimg {
       handle
+      width
+      height
     }
   }
   }`
