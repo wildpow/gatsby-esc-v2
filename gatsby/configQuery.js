@@ -112,8 +112,19 @@ module.exports = `{
       coverImg {
         handle
       }
-    }
-    
+    }  
   }
-  
+  allPosts(filter: {isPublished: true} orderBy: dateAndTime_DESC) {
+    id
+    slug
+    isPublished
+    title
+    dateAndTime
+    coverImage { handle }
+    
+    content
+    bottomimg {
+      handle
+    }
+  }
   }`
