@@ -34,7 +34,6 @@ class Blog extends React.Component {
         </header>
         <Section>
           <BlogList items={items} count={this.state.postsToShow} />
-          {console.log(items)}
           <ShowMoreWrapper>
             {this.state.postsToShow < items.length  && (
               <Homebutton onClick={() => {

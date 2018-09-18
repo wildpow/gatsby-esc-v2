@@ -18,7 +18,6 @@ const BlogList = ({ items, count }) => {
     </StyledLink>
         )
       })}
-    {console.log(items)}
     </React.Fragment>
       
   )
