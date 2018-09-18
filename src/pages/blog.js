@@ -1,11 +1,18 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { graphql } from "gatsby"
 import { Section, Homebutton, ShowMoreWrapper, Main} from '../styles/blogListStyles';
 import { H2 } from '../styles/mainStyles';
 import Layout from '../components/layout';
 import logo from '../images/logo.png';
+import BlogList from '../components/blog/blogList';
 
-const Blog = (props) => {
+class Blog extends React.Component {
+  state = {
+    postsToShow: 4
+  }
+  render() {
+    let items = this.props.data.allPost.edges
   return (
     <Layout>
       <Helmet>
@@ -26,11 +33,39 @@ const Blog = (props) => {
           <H2>Our Blog</H2>
         </header>
         <Section>
-          
+          <BlogList items={items} count={this.state.postsToShow} />
+          {console.log(items)}
+          <ShowMoreWrapper>
+            {this.state.postsToShow < items.length  && (
+              <Homebutton onClick={() => {
+                this.setState({
+                  postsToShow: this.state.postsToShow + 4
+                })
+              }}>
+                Show More Posts
+              </Homebutton>
+            )}
+          </ShowMoreWrapper>
         </Section>
       </Main>
     </Layout>
   )
 }
-
+}
 export default Blog;
+
+export const blogList = graphql`
+  query blogList {
+    allPost(sort: {fields: dateAndTime order: DESC} filter: {isPublished: {eq: true}}) {
+      edges {
+        node {
+          slug
+          title
+          dateAndTime
+          coverImage { handle}
+          id
+        }
+      }
+    }
+  }
+`
