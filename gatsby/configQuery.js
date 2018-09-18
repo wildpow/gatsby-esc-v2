@@ -112,7 +112,7 @@ module.exports = `{
       coverImg {
         handle
       }
-    } 
+    }  
   }
   allPosts(filter: {isPublished: true} orderBy: dateAndTime_DESC) {
     id
@@ -125,6 +125,8 @@ module.exports = `{
     content
     bottomimg {
       handle
+      width
+      height
     }
   }
-  }` 
+  }`

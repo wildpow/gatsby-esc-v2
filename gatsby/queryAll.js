@@ -69,6 +69,23 @@ module.exports = `
         }
       }
     }
-    
+    allPost(sort: {fields: dateAndTime order: DESC} filter: {isPublished: {eq: true}}) {
+      edges {
+        node {
+          id
+          slug
+          isPublished
+          title
+          dateAndTime
+          content
+          bottomimg { 
+            handle
+            width
+            height  
+          }
+          coverImage { handle }
+        }
+      }
+    }
   }
 `

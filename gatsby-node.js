@@ -31,6 +31,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   return new Promise((resolve, reject) => {
     const adjTemplate = path.resolve(`src/templates/base.js`);
     const mattressTemplate = path.resolve(`src/templates/mattress.js`);
+    const postTemplate = path.resolve(`src/templates/post.js`);
+    
     resolve(
       graphql(queryAll).then(result => {
         if (result.errors) {
@@ -53,6 +55,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             component: slash(mattressTemplate),
             context: {
               uri: node.uri
+            }
+          })
+        })
+        const posts = result.data.allPost.edges;
+        posts.map(({ node }) => {
+          createPage({
+            path: `/blog/${node.slug}`,
+            component: slash(postTemplate),
+            context: {
+              slug: node.slug
             }
           })
         })
